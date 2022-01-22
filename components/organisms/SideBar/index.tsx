@@ -23,7 +23,7 @@ export default function SideBar(props: SideBarProps) {
           <MenuItem
             title="Transactions"
             icon="ic-menu-transaction"
-            href="member/transactions/"
+            href="/member/transactions"
             active={activeMenu === "transactions"}
           />
           <MenuItem title="Messages" icon="ic-menu-messages" href="/member" />
@@ -35,7 +35,7 @@ export default function SideBar(props: SideBarProps) {
             href="/member/edit-profile"
             active={activeMenu === "settings"}
           />
-          <MenuItem title="Log Out" icon="ic-menu-logout" href="sign-in" />
+          <MenuItem title="Log Out" icon="ic-menu-logout" href="/sign-in" />
         </div>
         <Footer />
       </div>
