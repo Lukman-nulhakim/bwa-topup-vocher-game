@@ -1,3 +1,40 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-indent": "off",
+    "arrow-body-style": ["error", "always"],
+    "react/jsx-indent-props": "off",
+    "react/jsx-first-prop-new-line": "off",
+    "react/self-closing-comp": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-max-props-per-line": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-closing-tag-location": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/no-unknown-property": "off",
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "linebreak-style": ["error", "windows"],
+    "quotes": ["error", "double"],
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-props-no-spreading": "off"
+  }
 }
