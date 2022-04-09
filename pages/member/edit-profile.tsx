@@ -1,5 +1,5 @@
-import SideBar from "../../components/organisms/SideBar";
 import Image from "next/image";
+import SideBar from "../../components/organisms/SideBar";
 import Input from "../../components/atoms/input";
 
 export default function EditProfile() {
